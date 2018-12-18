@@ -7,6 +7,6 @@
     "test": "node test"
   },
   "keywords": ["calendar"],
-  "author": "",
+  "author": "GY Noh",
   "license": "ISC"
 }
