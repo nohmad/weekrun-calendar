@@ -6,6 +6,11 @@
   "scripts": {
     "test": "node test"
   },
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nohmad/weekrun-calendar"
+  },
   "keywords": ["calendar"],
   "author": "GY Noh",
   "license": "ISC"
