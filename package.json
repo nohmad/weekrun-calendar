@@ -1,6 +1,6 @@
 {
   "name": "weekrun-calendar",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Library for calendar events recurring by 2 or 4 week period",
   "main": "index.js",
   "scripts": {
