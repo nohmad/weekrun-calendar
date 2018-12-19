@@ -18,6 +18,10 @@ Jan. 1, 2017 was Sunday, which is a good starting point to create a calendar sys
 ```
 > const cal = require('weekrun-calendar')
 undefined
-> cal.nextRecurringDate(new Date(2017, 0, 1), 'sun', 5).toDateString() # Jan. 1, 2017
+> cal.nextRecurringDate(new Date(2017, 0, 1), 'sun', 5).toDateString()
+'Sun Jan 01 2017'
+> cal.nextRecurringDate(new Date(2017, 0, 2), 'sun', 5).toDateString()
 'Sun Jan 15 2017'
+> cal.nextRecurringDate(new Date(2017, 0, 1), 'sun', 10).toDateString()
+'Sun Jan 08 2017'
 ```
