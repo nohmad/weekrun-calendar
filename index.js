@@ -19,7 +19,7 @@ class WeekRunCalendar {
   nextRecurringDate(date, wday, periodic) {
     const week_index = DAY_NAMES.indexOf(wday)
     const base_date = new Date(new Date(this.sunday(date, periodic)).getTime() + (week_index * DAY_TIMES))
-    return new Date(base_date.getTime() + (date < base_date ? 0 : this.interval(periodic)) * DAY_TIMES)
+    return new Date(base_date.getTime() + (base_date < date ? this.interval(periodic) : 0) * DAY_TIMES)
   }
 
   sunday(date, periodic) {

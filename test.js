@@ -1,6 +1,6 @@
-const cal = require('./src/index')
+const cal = require('./index')
 
-console.log(cal.nextRecurringDate(new Date(2017, 0, 1, 11), 'sun',  5).toDateString() == new Date(2017, 0, 15).toDateString())
+console.log(cal.nextRecurringDate(new Date(2017, 0, 1, 11), 'sun',  5).toDateString() == new Date(2017, 0, 1).toDateString())
 console.log(cal.nextRecurringDate(new Date(2017, 0, 1, 11), 'sun', 10).toDateString() == new Date(2017, 0, 8).toDateString())
 console.log(cal.nextRecurringDate(new Date(2017, 0, 1, 11), 'mon',  5).toDateString() == new Date(2017, 0, 2).toDateString())
 console.log(cal.nextRecurringDate(new Date(2017, 0, 1, 11), 'mon', 10).toDateString() == new Date(2017, 0, 9).toDateString())
